@@ -1,4 +1,4 @@
-OpenCV project
+OpenCV Project
 ===============
 
 Dynamic image tracking using the OpenCV Library on c++ basis
