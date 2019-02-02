@@ -1,8 +1,8 @@
 OpenCV Project
 ===============
 
-Dynamic image tracking using the OpenCV Library on c++ basis
--------------------------------------------------------------
+Dynamic image tracking using the OpenCV Library, Create with c++
+-----------------------------------------------------------------
 
 #### * Get **real-time video** input.
 
