@@ -8,7 +8,7 @@ Dynamic image tracking using the OpenCV Library on c++ basis
 
 #### * Detect objects **using HSV values** of specified color in the image.
 
-'''C++
+```C++
 void mouse_callback(int event, int x, int y, int flags, void *param) {
 if (event == CV_EVENT_LBUTTONDOWN) {              //마우스 왼쪽 버튼
 Vec3b color_pixel = img_color.at<Vec3b>(y, x);    //클릭한 위치 픽셀 값 읽어옴
@@ -28,11 +28,11 @@ lower_blue2 = Vec3b(hue, threshold1, threshold1);
 upper_blue2 = Vec3b(hue + 10, 255, 255);
 }
                       '''omission'''
-'''
+```
 
 #### * To detect objects more clearly, apply the distance conversion function **"distanceTransform()"** using the color values detected.
 
-'''C++
+```C++
 Point getHandCenter(const Mat& mask, double& maxVal) {
 Mat mask_img;                                             //거리 변환 행렬을 저장 변수
 distanceTransform(mask, mask_img, CV_DIST_L2, 5);         //중심으로 부터 점점 옅어지는 영상(=중심의 픽셀값 가장 높음) 출력
@@ -40,6 +40,6 @@ minMaxIdx(mask_img, NULL, &maxVal, NULL, maxIdx, mask);   //최소값 사용하�
 
 return Point(maxIdx[1], maxIdx[0]);                       //최대값 좌표의 행, 열 값 반환
 }
-'''
+```
 
 #### * When an object enters the "ROI" area, it runs a simple game and the object acts like a mouse.
