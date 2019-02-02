@@ -28,6 +28,7 @@ lower_blue2 = Vec3b(hue, threshold1, threshold1);
 upper_blue2 = Vec3b(hue + 10, 255, 255);
 }
                       '''omission'''
+}
 ```
 
 #### * To detect objects more clearly, apply the distance conversion function **"distanceTransform()"** using the color values detected.
