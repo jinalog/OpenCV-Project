@@ -44,3 +44,8 @@ return Point(maxIdx[1], maxIdx[0]);                       //최대값 좌표의 
 ```
 
 #### * When an object enters the "ROI" area, it runs a simple game and the object acts like a mouse.
+
+## [demonstration video(YouTube)](https://www.youtube.com/watch?v=E13u8Xj-U6M)
+
+
+### Reference open source > https://webnautes.tistory.com/1266?category=707231 
